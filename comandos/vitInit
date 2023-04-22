@@ -1,0 +1,30 @@
+--> Se crea una carpeta nueva:
+yarn create vite
+--> Luego toca instalar yarn:
+yarn
+--> Ya se puede levantar el entorno:
+yarn dev
+--> Eslint:
+npm add eslint
+--> Configurar eslint:
+yarn eslint --init
+--> Crear el script:
+nano package.json
+"lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue src"
+--> Editar las reglas:
+nano .eslintrc.cjs
+--> Agregar las reglas:
+ver archivo reglas.
+--> Todo listo:
+yarn lint
+--> Prettier: instalar prettier junto a eslint
+npm install --save-dev eslint-config-prettier
+--> Configurar la dependencia y regla de prettier
+----> Dependencia en la parte de extends
+'plugin:prettier/recommended'
+----> Crear el archivo para las reglas de prettier
+nano .prettierrc
+------> Configurar las reglas para prettier
+ver archivo de reglas
+--> Crear el build --> para poder crear el codigo para subir al servidor:
+yarn build
